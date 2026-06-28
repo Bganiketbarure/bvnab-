@@ -1,0 +1,1014 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BVNAB Intelligence | Automation | AI Vision | Test Bench Solutions</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#fff;
+color:#333;
+line-height:1.6;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+:root{
+--primary:#d90429;
+--dark:#111;
+--light:#f5f5f5;
+}
+
+header{
+background:#f9f7f7;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#f60404;
+}
+
+.logo span{
+color:black;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+color:rgb(11, 11, 11);
+text-decoration:none;
+font-weight:600;
+}
+
+.nav-links a:hover{
+color:var(--primary);
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('new-939x1024.png') center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:var(--primary);
+color:white;
+text-decoration:none;
+border-radius:5px;
+margin:5px;
+}
+
+.btn:hover{
+background:#a90320;
+}
+
+section{
+padding:35px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:var(--primary);
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card i{
+font-size:45px;
+color:var(--primary);
+margin-bottom:15px;
+}
+
+.products-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.product{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.product img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.product-content{
+padding:20px;
+}
+
+.product-content h3{
+margin-bottom:10px;
+}
+
+.price{
+color:var(--primary);
+font-size:22px;
+font-weight:bold;
+margin:10px 0;
+}
+
+.clients{
+background:#f8f8f8;
+}
+
+.client-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.client-box{
+background:white;
+padding:30px;
+font-size:20px;
+font-weight:bold;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.contact-form{
+display:grid;
+gap:15px;
+max-width:700px;
+margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:15px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.contact-form button{
+background:var(--primary);
+color:white;
+border:none;
+padding:15px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+padding:50px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+}
+
+.social a{
+font-size:24px;
+margin-right:15px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+color:white;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+.hero-content h1{
+font-size:36px;
+}
+.about-grid{
+grid-template-columns:1fr;
+}
+.nav-links{
+display:none;
+}
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+transition:.3s;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+ .journey-section{
+    padding:60px 20px;
+    background:#0f0f0f;
+    color:#fff;
+    font-family:Arial, sans-serif;
+  }
+
+  .section-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:50px;
+  }
+
+  /* Timeline line */
+  .timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+  }
+
+  .timeline::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:50%;
+    width:4px;
+    height:100%;
+    background:#ff3b3b;
+    transform:translateX(-50%);
+  }
+
+  .timeline-item{
+    display:flex;
+    justify-content:space-between;
+    margin:40px 0;
+    position:relative;
+  }
+
+  .timeline-item .content{
+    width:45%;
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(255,0,0,0.2);
+  }
+
+  .timeline-item:nth-child(odd){
+    flex-direction:row;
+  }
+
+  .timeline-item:nth-child(even){
+    flex-direction:row-reverse;
+  }
+
+  .dot{
+    position:absolute;
+    left:50%;
+    width:18px;
+    height:18px;
+    background:#ff3b3b;
+    border-radius:50%;
+    transform:translateX(-50%);
+    top:20px;
+    box-shadow:0 0 10px #ff3b3b;
+  }
+
+  .dot.future{
+    background:gold;
+    box-shadow:0 0 10px gold;
+  }
+
+  h3{
+    margin:0;
+    color:#ff3b3b;
+  }
+
+  p{
+    margin-top:10px;
+    line-height:1.5;
+    color:#a59a9a;
+  }
+.product-row{
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 15px 5px;
+  scroll-snap-type: x mandatory;
+}
+
+.product-card{
+  min-width: 260px;
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.product-card img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3{
+  margin: 10px 0 5px;
+}
+
+.price{
+  font-weight: bold;
+  color: #0d0d0d;
+  margin-bottom: 10px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 8px 15px;
+  background: #e60023;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  background: #b8001a;
+}
+
+/* ================= FESTIVAL THEME ================= */
+
+#festivalOverlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:9999;
+}
+
+.theme-text{
+position:fixed;
+top:560px;
+left:50%;
+transform:translateX(-50%);
+background:rgba(201, 195, 195, 0.6);
+color:#fff;
+padding:12px 25px;
+border-radius:40px;
+font-size:22px;
+font-weight:bold;
+z-index:10000;
+display:none;
+}
+
+.diwali{
+background:url("festival/diwali.gif") repeat;
+}
+
+.ganpati{
+background:url("festival/flowers.png") repeat;
+}
+
+.anniversary{
+background:url("festival/confetti.gif") repeat;
+}
+</style>
+</head>
+
+<body>
+<div id="festivalOverlay"></div>
+<div class="theme-text" id="themeText"></div>
+
+<header>
+<nav class="navbar">
+<div class="logo">BVNAB <span>Intelligence</span></div>
+
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#Service">Services</a>
+<a href="#products">Products</a>
+<a href="#clients">Clients</a>
+<a href="#events">Events</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Industrial Automation & Testing Solutions</h1>
+<p>TEST BENCH DEVELOPMENT | PROCESS AUTOMATION | CONTROL PANEL |<br> IoT INTEGRATION |
+VISION INTEGRATION
+</p>
+
+<a href="#contact" class="btn">Get Inquiry</a>
+<a href="brochure.pdf" class="btn">Download Brochure</a>
+</div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+<h2 class="section-title">About BVNAB Intelligence</h2>
+
+<div class="about-grid">
+
+<div>
+    <video autoplay muted loop playsinline controlslist="nodownload" width="100%">
+        <source src="vidssave.com Corporate Film _ Kirloskar C414 - Industry 4.0 _ Toolbox Studio 1080P.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div>
+<h3>Who We Are</h3>
+
+<p>
+BVNAB Intelligence is a Pune based engineering and technology company
+providing Industrial Automation, AI Vision Systems, Test Bench Solutions,
+Digital Manufacturing and Industry 4.0 solutions.
+</p>
+
+<br>
+
+<p>
+We help industries improve productivity, quality and operational efficiency
+through innovative engineering solutions and smart technologies.
+</p>
+
+<br>
+
+<h3>Mission</h3>
+<p>
+To deliver reliable, innovative and cost-effective industrial technology
+solutions that accelerate industrial growth.
+</p>
+
+<br>
+
+<h3>Vision</h3>
+<p>
+To become a leading global engineering and technology company known for
+innovation, quality and customer satisfaction.
+</p>
+
+</div>
+
+</div>
+</section>
+<!-- SERVICES SECTION -->
+
+<section>
+<section id="Service" class="Service"></section>
+  <h2 class="section-title">Our Services</h2>
+
+  <div class="services-grid">
+
+    <div class="card">
+      <h3>Industrial Automation</h3>
+      <p>
+        Design and development of smart automation systems for manufacturing
+        and production industries.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Test Bench Solutions</h3>
+      <p>
+        Customized test bench setups for performance testing, validation and
+        quality control systems.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>IoT & Embedded Systems</h3>
+      <p>
+        Smart IoT devices, sensor integration and embedded system development
+        for industrial applications.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>AI Vision Systems</h3>
+      <p>
+        Machine vision based inspection systems for defect detection and
+        automation intelligence.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Product Development</h3>
+      <p>
+        End-to-end product design, prototyping and engineering development
+        for industrial solutions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Control Panel Engineering</h3>
+      <p>
+        Design and manufacturing of industrial control panels for machines
+        and automation systems.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+<!-- PROJECTS SECTION -->
+
+<section id="projects">
+
+<h2 class="section-title">Projects Delivered</h2>
+
+<div class="projects-grid">
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1200">
+<h3>Transmission Test Bench</h3>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1581092919535-7146ff1a5901?q=80&w=1200">
+<h3>AI Vision Inspection System</h3>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200">
+<h3>Motor Performance Testing</h3>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?q=80&w=1200">
+<h3>Automated Inspection Station</h3>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200">
+<h3>Industrial Automation Project</h3>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200">
+<h3>Industry 4.0 Dashboard</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- PRODUCT PORTFOLIO SECTION -->
+<section class="product-portfolio" id="products">
+
+  <h2 class="section-title">Product Portfolio</h2>
+  
+
+  <div class="product-row">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="images/test-bench.jpg" alt="Test Bench">
+      <h3>Automated Test Bench</h3>
+      <p class="price">₹1,25,000+</p>
+      <a href="#contact" class="btn">Get Details</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="images/control-panel.jpg" alt="Control Panel">
+      <h3>Control Panel System</h3>
+      <p class="price">₹85,000+</p>
+      <a href="#contact" class="btn">Get Details</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="images/robot-unit.jpg" alt="Robotic Unit">
+      <h3>Robotic Automation Unit</h3>
+      <p class="price">₹2,50,000+</p>
+      <a href="#contact" class="btn">Get Details</a>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="images/vision-system.jpg" alt="Vision System">
+      <h3>Vision Inspection System</h3>
+      <p class="price">₹1,75,000+</p>
+      <a href="#contact" class="btn">Get Details</a>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+      <img src="images/fixture.jpg" alt="Fixtures">
+      <h3>Custom Machine Fixtures</h3>
+      <p class="price">₹35,000+</p>
+      <a href="#contact" class="btn">Get Details</a>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+      <img src="images/iot-module.jpg" alt="IoT Module">
+      <h3>IoT Monitoring Module</h3>
+      <p class="price">₹65,000+</p>
+      <a href="#contact" class="btn">Get Details</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CLIENTS -->
+
+<section id="clients" class="clients">
+
+<h2 class="section-title">Our Clients</h2>
+
+<div class="client-grid">
+
+<div class="client-box">
+<img src="new-939x1024.png" width="55" alt="LOADING"><br>
+Premium Transmission
+</div>
+
+<div class="client-box">
+<img src="new-939x1024.png" width="55" alt="LOADING"><br>
+Manufacturing Client
+</div>
+
+<div class="client-box">
+<img src="new-939x1024.png" width="55" alt="LOADING"><br>
+Automation Client
+</div>
+
+<div class="client-box">
+<img src="new-939x1024.png" width="55" alt="LOADING"><br>
+Engineering Client
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT FORM -->
+
+<section id="contact">
+
+<h2 class="section-title">Inquiry Form</h2>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="text" placeholder="Company Name">
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="text" placeholder="Service Required">
+
+<textarea rows="6" placeholder="Message"></textarea>
+
+<button type="submit">
+Submit Inquiry
+</button>
+
+</form>
+
+</section>
+
+```html
+<!-- EVENTS SECTION -->
+
+<section id="events" style="background:#f8f8f8;">
+
+<h2 class="section-title">Events & Activities</h2>
+
+<div class="services-grid">
+
+<div class="card">
+<img src="event1.jpg" style="width:100%;height:220px;object-fit:cover;border-radius:10px;">
+
+<h3 style="margin-top:15px;">
+Industrial Automation Workshop
+</h3>
+
+<p>
+Hands-on training program on PLC, SCADA, HMI and Industrial Automation Technologies.
+</p>
+
+</div>
+
+<div class="card">
+<img src="event2.jpg" style="width:100%;height:220px;object-fit:cover;border-radius:10px;">
+
+<h3 style="margin-top:15px;">
+Industry 4.0 Seminar
+</h3>
+
+<p>
+Knowledge sharing session on Smart Manufacturing, IoT and AI Integration.
+</p>
+
+</div>
+
+<div class="card">
+<img src="event3.jpg" style="width:100%;height:220px;object-fit:cover;border-radius:10px;">
+
+<h3 style="margin-top:15px;">
+Product Launch Event
+</h3>
+
+<p>
+Launch of innovative industrial products and intelligent testing solutions.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<br>
+
+<iframe
+src="https://maps.google.com/maps?q=Pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="400"
+style="border:0;border-radius:10px;"
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<h3>BVNAB Intelligence</h3>
+
+<br>
+
+<p>
+Industrial Automation & Testing Solutions
+</p>
+
+<p>
+TEST BENCH DEVELOPMENT | PROCESS AUTOMATION | CONTROL PANEL |
+IoT INTEGRATION | VISION INTEGRATION
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>Services</h3>
+
+<br>
+
+<p>PROCESS Automation</p>
+<p>AI Vision Integration</p>
+<p>Test Bench Solutions</p>
+<p>Industry 4.0 / IoT</p>
+<p>Control Panel Design </p>
+
+</div>
+
+<div>
+
+<h3>Connect With Us</h3>
+
+<br>
+
+<div class="social">
+
+<a href="https://linkedin.com" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://instagram.com" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://youtube.com" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="https://facebook.com" target="_blank">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="https://twitter.com" target="_blank">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+</div>
+
+<br>
+
+<p>
+sales@bvnab.in
+</p>
+
+<p>
++91 9356368018
+</p>
+
+</div>
+
+</div>
+
+<hr style="margin:30px 0; border-color:#444;">
+
+<div style="text-align:center;">
+
+<p>
+© 2026 BVNAB Intelligence Pvt. Ltd.
+All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+
+<a
+href="https://wa.me/919356368018"
+target="_blank"
+class="whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+// ================== CHANGE ONLY THIS ===================
+
+const currentTheme = "anniversary";
+
+// Available:
+// "none"
+// "diwali"
+// "ganpati"
+// "anniversary"
+
+// =======================================================
+
+const overlay = document.getElementById("festivalOverlay");
+const text = document.getElementById("themeText");
+
+if(currentTheme=="diwali"){
+overlay.className="diwali";
+text.innerHTML="🪔 Happy Diwali";
+text.style.display="block";
+}
+
+if(currentTheme=="ganpati"){
+overlay.className="ganpati";
+text.innerHTML="🙏 Happy Ganesh Chaturthi";
+text.style.display="block";
+}
+
+if(currentTheme=="anniversary"){
+overlay.className="anniversary";
+text.innerHTML="🎉 Celebrating 3 Years of Excellence";
+text.style.display="block";
+}
+
+// Contact Form
+document.querySelector("form").addEventListener("submit",function(e){
+e.preventDefault();
+alert("Thank You! Your inquiry has been submitted successfully.");
+});
+
+</script>
+
+</body>
+</html>
+
